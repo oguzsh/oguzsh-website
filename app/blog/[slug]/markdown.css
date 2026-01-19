@@ -1,0 +1,144 @@
+.markdown {
+	line-height: 28px;
+	--path: none;
+	--radius-top: 12px;
+	--radius-bottom: 12px;
+	--padding-top: 1rem;
+	--padding-bottom: 1rem;
+}
+
+.markdown > * {
+	content-visibility: auto;
+	contain-intrinsic-size: 0 auto;
+}
+
+.markdown > * + * {
+	margin-top: 1.5rem;
+}
+
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+	position: relative;
+}
+
+.markdown ul,
+.markdown ol {
+	padding-left: 1.5rem;
+}
+
+.markdown ul {
+	list-style-type: disc;
+}
+
+.markdown ol {
+	list-style-type: decimal;
+}
+
+.markdown li {
+	margin-bottom: 0.75rem;
+}
+
+.markdown li:last-child {
+	margin-bottom: 0;
+}
+
+.markdown blockquote {
+	padding-left: 1rem;
+	margin-left: -1rem;
+	font-style: italic;
+}
+
+.markdown pre {
+	border-radius: 12px;
+	padding: 1rem;
+	overflow-x: auto;
+	font-size: 0.875rem;
+	line-height: 1.6;
+	margin: 1.5rem -1rem;
+}
+
+@media (min-width: 640px) {
+	.markdown pre {
+		margin: 1.5rem 0;
+	}
+}
+
+@media (max-width: 550px) {
+	.markdown pre {
+		border-radius: 0 !important;
+	}
+}
+
+.markdown :not(pre) > code {
+	padding: 0.2em 0.4em;
+	border-radius: 6px;
+	font-size: 0.9em;
+	white-space: normal;
+}
+
+.markdown img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin: 1.5rem 0;
+}
+
+.markdown hr {
+	border: none;
+	margin: 2rem 0;
+}
+
+.markdown table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+}
+
+.markdown th,
+.markdown td {
+	padding: 0.75rem;
+	text-align: left;
+}
+
+.markdown h2 a,
+.markdown h3 a,
+.markdown h4 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.markdown h2 a::before,
+.markdown h3 a::before,
+.markdown h4 a::before {
+	content: "#";
+	position: absolute;
+	transform: translateX(-1em);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.markdown h2:hover a::before,
+.markdown h3:hover a::before,
+.markdown h4:hover a::before,
+.markdown h2:focus-within a::before,
+.markdown h3:focus-within a::before,
+.markdown h4:focus-within a::before {
+	opacity: 1;
+}
+
+.markdown [data-line] {
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: transparent;
+}
+
+.markdown [data-highlighted-line] {
+	background-color: #181825;
+	border-left-color: #cba6f7;
+}
+
+.markdown [data-highlighted-line][data-highlighted-line-id="errorLine"] {
+	background-color: #f38ba843;
+	border-left-color: #f38ba8;
+}
