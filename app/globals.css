@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
+
+/* Base styles */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.7;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+/* Sun emoji - slow rotation */
+@keyframes spin-slow {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-spin-slow {
+	display: inline-block;
+	animation: spin-slow 8s linear infinite;
+}
+
+/* Coffee emoji - gentle bounce */
+@keyframes bounce-gentle {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-4px);
+	}
+}
+
+.animate-bounce-gentle {
+	display: inline-block;
+	animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+/* Moon emoji - glow pulse */
+@keyframes glow {
+	0%,
+	100% {
+		filter: drop-shadow(0 0 1px #cba6f7);
+	}
+	50% {
+		filter: drop-shadow(0 0 8px #cba6f7);
+	}
+}
+
+.animate-glow {
+	display: inline-block;
+	animation: glow 5s ease-in-out infinite;
+}
