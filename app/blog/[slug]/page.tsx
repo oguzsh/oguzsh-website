@@ -110,9 +110,14 @@ export default PostPage;
 export const generateStaticParams = async () => {
 	try {
 		const entries = await readdir("./content/blog/", { withFileTypes: true });
+		if (entries.length === 0) return [{ slug: "not-found" }];
+
 		const dirs = entries
 			.filter(entry => entry.isDirectory())
 			.map(entry => entry.name);
+
+		if (dirs.length === 0) return [{ slug: "not-found" }];
+
 		return dirs.map(dir => ({ slug: dir }));
 	} catch {
 		return [];

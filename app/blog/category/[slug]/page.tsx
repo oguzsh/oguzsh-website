@@ -6,6 +6,8 @@ import PostItem from "../../../components/PostItem";
 
 export const generateStaticParams = async () => {
 	const posts = await getPosts();
+	if (posts.length === 0) return [{ slug: "not-found" }];
+
 	const categories = new Set(posts.map(post => post.category).filter(Boolean));
 
 	return Array.from(categories).map(category => ({
