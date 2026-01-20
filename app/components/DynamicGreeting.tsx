@@ -32,7 +32,7 @@ const getGreeting = (): GreetingData => {
 	} else if (hour >= 18 && hour < 22) {
 		return {
 			text: "Hey, good evening",
-			emoji: "☀️",
+			emoji: "🌆",
 			animationClass: "animate-spin-slow",
 		};
 	} else {
