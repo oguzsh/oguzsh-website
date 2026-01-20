@@ -29,6 +29,12 @@ const getGreeting = (): GreetingData => {
 			emoji: "☕",
 			animationClass: "animate-bounce-gentle",
 		};
+	} else if (hour >= 18 && hour < 22) {
+		return {
+			text: "Hey, good evening",
+			emoji: "🌆",
+			animationClass: "animate-spin-slow",
+		};
 	} else {
 		return {
 			text: "Hey, good night",
