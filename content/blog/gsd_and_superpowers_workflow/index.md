@@ -45,32 +45,7 @@ When mapped out, the separation of concerns becomes clear. You can adapt this wo
 
 Here is what the macro-to-micro execution looks like in practice:
 
-```mermaid
-flowchart TD
-    subgraph GSD_Macro [GSD: Macro Orchestration]
-        A["/gsd-init<br>Vision, REQUIREMENTS.md, ROADMAP.md"]
-        B["/gsd-plan-phase<br>PLAN.md, task DAG, wave breakdown"]
-        C["/gsd-execute-phase"]
-        H["/gsd-verify-phase<br>Quality gates, schema/scope/security/state"]
-    end
-
-    subgraph Superpowers_Micro [Superpowers: Micro Discipline]
-        D["using-git-worktrees<br>Isolated worktree for the task"]
-        E["test-driven-development<br>RED-GREEN-REFACTOR"]
-        F["subagent-driven-development<br>2-stage review"]
-        G["verification-before-completion<br>Proof before claim"]
-        PR["Task PR is created, passes code review"]
-    end
-
-    A --> B
-    B --> C
-    C -->|For each task in every wave| D
-    D --> E
-    E --> F
-    F --> G
-    G --> PR
-    PR --> H
-```
+<img width="2804" height="5480" alt="Detection Pipeline for-2026-04-14-143135" src="https://github.com/user-attachments/assets/6b9a38b1-89b3-44f7-a03f-30308448bf10" />
 
 ### Conclusion
 
