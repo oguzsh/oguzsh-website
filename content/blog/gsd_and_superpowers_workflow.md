@@ -1,6 +1,8 @@
 ---
 title: Managing AI Context Rot: A GSD and Superpowers Workflow
-description: This is exactly how I handle my development in Claude Code. Discover my personal workflow for surviving AI context rot by pairing GSD for macro planning and Superpowers for micro code discipline.
+date: "2026-04-14"
+spoiler: "This is exactly how I handle my development in Claude Code. Discover my personal workflow for surviving AI context rot by pairing GSD for macro planning and Superpowers for micro code discipline."
+category: "Engineering"
 ---
 
 If you use Claude Code for complex monorepos, you are likely familiar with "context rot." Once an LLM session exceeds the 80K+ token mark, output quality often degrades. The model drops architectural context, simplifies requirements, and generates pull requests that are too large to review efficiently.
