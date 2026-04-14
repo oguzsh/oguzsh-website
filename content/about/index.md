@@ -1,9 +1,9 @@
 ---
-title: Oguzhan Ince - Sr. Software Engineer
-description: About Oguzhan Ince - Sr. Software Engineer & AI Tinkerer
+title: Oguzhan Ince - Software Engineer
+description: About Oguzhan Ince - Software Engineer & AI Tinkerer
 ---
 
-Hi! I'm Oguzhan! I'm a senior software developer with 5 years of experience. I build AI-powered solutions and scalable applications. I'm fascinated by LLMs and love creating intelligent systems that adapt to user needs.
+Hi! I'm Oguzhan! I'm just a software developer and sometimes build AI-powered solutions and scalable applications. I'm fascinated by LLMs and love creating intelligent systems that adapt to user needs.
 
 I genuinely enjoy learning new things and staying curious about emerging technologies. There's always something exciting to explore!
 
