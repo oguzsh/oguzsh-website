@@ -41,7 +41,7 @@ If you feed this into a standard AI chat session, it will likely break your exis
 
 ### The Workflow Model
 
-When mapped out, the separation of concerns becomes clear. You can adapt this workflow to fit your own needs. For instance, rather than running these commands one by one, I use a custom command file that automates the process. You could also wrap this into a dedicated agent or turn it into a reusable skill; it ultimately depends on your personal preferences and development setup. 
+When mapped out, the separation of concerns becomes clear. You can adapt this workflow to fit your own needs. For instance, rather than running these commands one by one, I use a [custom skill](https://gist.github.com/oguzsh/3320f3feae27f3b102f01fe27fa6f5e8) file that automates the process. You could also wrap this into a dedicated agent or turn it into a reusable skill; it ultimately depends on your personal preferences and development setup. 
 
 Here is what the macro-to-micro execution looks like in practice:
 
